@@ -14,8 +14,8 @@ I'm **Kanav Jain** (he/him), a developer and neurodiversity advocate based in **
 
 | Category | Highlights |
 | --- | --- |
-| 🛠️ Building | **[Stims](https://github.com/zz-plant/stims)**, a library of interactive webtoys for sensory engagement.<br>Accessibility tools that help healthcare professionals navigate financial and legal complexity. |
-| 🌱 Learning | Advanced **HTML5, CSS3, and JavaScript** for interactive, responsive experiences.<br>The intersection of **AI** and **neurodiverse support tools**.<br>Better practices for **open-source collaboration** and community stewardship. |
+| 🛠️ Building | **[Stims](https://github.com/zz-plant/stims)** (beta), a library of interactive webtoys for sensory engagement.<br>**[Ethotechnics](https://github.com/zz-plant/ethotechnics.org)** (live), a home for projects exploring inclusive design and neurodiversity.<br>**[Tenant Tools](https://github.com/zz-plant/tenant-tools)** (beta), a toolkit for renter advocacy and housing navigation.<br>**[Whether](https://github.com/zz-plant/whether)** (beta), a mindful weather experience and reflection space. |
+| 🌱 Learning | Advanced **HTML5, CSS3, and JavaScript** for interactive, responsive experiences.<br>Building with **generative AI** for faster prototyping and creative tooling.<br>The intersection of **AI** and **neurodiverse support tools**.<br>Better practices for **open-source collaboration** and community stewardship. |
 
 ## Collaboration
 
@@ -37,5 +37,6 @@ I'm **Kanav Jain** (he/him), a developer and neurodiversity advocate based in **
 
 - GitHub: <https://github.com/zz-plant>
 - Website: <https://syadvada.com>
+- Website: <https://kanav.net>
 - X: <https://x.com/kanavjain>
 </details>
