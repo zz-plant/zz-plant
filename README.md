@@ -10,11 +10,7 @@
 </p>
 
 <p>
-  Developer • Neurodiversity advocate • Chicago, IL
-</p>
-
-<p>
-  I build inclusive, accessible tools that support neurodiverse people and improve quality of life through thoughtful design and functionality.
+  Chicago, IL
 </p>
 
 </div>
@@ -28,19 +24,10 @@
     <td width="50%">
       <h3>🛠️ Building</h3>
       <ul>
-        <li><strong><a href="https://github.com/zz-plant/stims">Stims</a></strong> (beta) — interactive webtoys for sensory engagement.</li>
-        <li><strong><a href="https://github.com/zz-plant/ethotechnics.org">Ethotechnics</a></strong> (live) — a home for inclusive design + neurodiversity.</li>
-        <li><strong><a href="https://github.com/zz-plant/tenant-tools">Tenant Tools</a></strong> (beta) — renter advocacy and housing navigation.</li>
-        <li><strong><a href="https://github.com/zz-plant/whether">Whether</a></strong> (beta) — a mindful weather experience.</li>
-      </ul>
-    </td>
-    <td width="50%">
-      <h3>🌱 Learning</h3>
-      <ul>
-        <li>Advanced <strong>HTML5, CSS3, and JavaScript</strong> for interactive, responsive experiences.</li>
-        <li>Using <strong>generative AI</strong> for faster prototyping and creative tooling.</li>
-        <li>Exploring the intersection of <strong>AI</strong> and <strong>neurodiverse support tools</strong>.</li>
-        <li>Better practices for <strong>open-source collaboration</strong> and community stewardship.</li>
+        <li><strong><a href="https://github.com/zz-plant/stims">Stims</a></strong> (beta) — interactive webtoys for sensory integration.</li>
+        <li><strong><a href="https://github.com/zz-plant/ethotechnics.org">Ethotechnics</a></strong> (live) — a control framework and governance standard for fidelity and reliability in automated decision support.</li>
+        <li><strong><a href="https://github.com/zz-plant/tenant-tools">Tenant Tools</a></strong> (beta) — renter advocacy and secure problem tracking for Chicagoans.</li>
+        <li><strong><a href="https://github.com/zz-plant/whether">Whether</a></strong> (live) — whether.work, an AI-powered product strategy platform.</li>
       </ul>
     </td>
   </tr>
@@ -54,10 +41,6 @@
 - Projects that make the web more **accessible and inclusive**.
 - Open-source tools for **healthcare technology** and **neurodiversity support**.
 
-**Currently seeking**
-- Help refining **Stims** with more customizable webtoys and tools.
-- Connections with developers and advocates who want to improve accessibility in tech.
-
 ---
 
 ## 💬 Ask me about
@@ -70,6 +53,6 @@
 ## 🌐 Quick links
 
 - GitHub: <https://github.com/zz-plant>
-- Website: <https://syadvada.com>
+- Substack: <https://syadvada.com>
 - Portfolio: <https://kanav.net>
 - X: <https://x.com/kanavjain>
