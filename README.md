@@ -35,7 +35,7 @@
         <li><strong><a href="https://github.com/zz-plant/blog">The Crumple Zone</a></strong> — ~250 essays on systems, governance, and navigating life post-autism diagnosis. (<a href="https://thecrumple.zone">live</a>)</li>
         <li><strong><a href="https://github.com/zz-plant/ethotechnics.org">Ethotechnics</a></strong> — a governance standard for fidelity and reliability in automated decision support. (<a href="https://ethotechnics.org">live</a>)</li>
         <li><strong><a href="https://github.com/zz-plant/whether">Whether</a></strong> — operationalizing macroeconomic indicators into corporate guardrails. (<a href="https://whether.work">live</a>)</li>
-        <li><strong><a href="https://github.com/zz-plant/bread-archive">bread.fm</a></strong> — archiving the history of the BREAD music collective (SF, 2015-2018). (<a href="https://bread.fm">live</a>)</li>
+        <li><strong><a href="https://github.com/zz-plant/bread">bread.fm</a></strong> — archiving the history of the BREAD music collective (SF, 2015-2018). (<a href="https://bread.fm">live</a>)</li>
       </ul>
     </td>
   </tr>
