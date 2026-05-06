@@ -17,8 +17,6 @@
 
 ---
 
-## 🏗️ The Work
-
 <table>
   <tr>
     <td width="50%">
