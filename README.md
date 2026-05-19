@@ -26,6 +26,7 @@ My background runs through healthcare product leadership, founder/CEO work, and 
 | [NextConsensus](https://nextconsensus.com) | Source-backed review briefs for contested healthcare claims before coverage, formulary, and market-access decisions lock in. | Commercial proof sprint |
 | [Refract](https://github.com/refract-org/refract) | Open-source claim-history infrastructure for public knowledge. It turns MediaWiki revision history into deterministic event streams. | Active OSS |
 | [The Crumple Zone](https://thecrumple.zone) | Field writing on systems, burden, governance, neurodivergence, and institutional repair. | Active publication |
+| [Ethotechnics Studio](https://ethotechnics.com) | Clinical AI safety evaluation and governance advisory for health plans, healthcare AI companies, and investors. | Active client practice |
 | [Whether](https://whether.work) | Macro signal translation into operating posture and decision artifacts for startup leaders. | Concept and technical scoping |
 
 ## Selected Repos
