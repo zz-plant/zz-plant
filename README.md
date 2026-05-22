@@ -49,8 +49,8 @@ My background runs through healthcare product leadership, founder/CEO work, and 
 ## Background
 
 - Founding product lead for Doximity Dialer, which reached 100M+ clinician-to-patient calls and 300K+ clinician users.
-- Founder and former CEO of Andwise (raised funding, 60-member medical advisory board).
-- Director of Product at Transcarent, City of Hope; Epic EHR implementation.
+- Founder and former CEO of Andwise (raised funding, medical advisory board of over 50 physicians).
+- Director of Product at Transcarent, CancerCompass / CTCA Marketplace; Epic EHR implementation.
 - Evaluates clinical AI safety for health plans and investors via Ethotechnics Studio (ethotechnics.com).
 - Writes about decision infrastructure and AI safety at The Crumple Zone (thecrumple.zone).
 - Mentor, Techstars Northwestern Medicine Healthcare Accelerator.
