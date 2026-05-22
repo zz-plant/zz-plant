@@ -17,7 +17,7 @@ Product leader building decision infrastructure for healthcare, AI, and other hi
 
 I work on systems where the hard part is not the interface. It is the operating logic underneath it: who owns the decision, what evidence counts, what happens when the system is wrong, and how teams recover without hiding the failure.
 
-My background runs through healthcare product leadership, founder/CEO work, and systems research. I was the founding product lead for Doximity Dialer, later worked on care navigation and healthcare platform strategy, and now spend most of my time on decision infrastructure, public-knowledge observability, and governance systems that leave a usable trail.
+My background runs through healthcare product leadership, founder/CEO work, and systems research. I was the early product lead for Doximity Dialer, later worked on care navigation and healthcare platform strategy, and now spend most of my time on decision infrastructure, public-knowledge observability, and governance systems that leave a usable trail.
 
 ## Building Now
 
@@ -48,10 +48,10 @@ My background runs through healthcare product leadership, founder/CEO work, and 
 
 ## Background
 
-- Founding product lead for Doximity Dialer, which reached 100M+ clinician-to-patient calls and 300K+ clinician users.
+- Early product lead for Doximity Dialer; Doximity has since reported large-scale clinician adoption across its telemedicine tools.
 - Founder and former CEO of Andwise (raised funding, medical advisory board of over 50 physicians).
 - Director of Product at Transcarent, CancerCompass / CTCA Marketplace; Epic EHR implementation.
-- Evaluates clinical AI safety for health plans and investors via Ethotechnics Studio (ethotechnics.com).
+- Evaluates clinical AI safety through Ethotechnics Studio (ethotechnics.com).
 - Writes about decision infrastructure and AI safety at The Crumple Zone (thecrumple.zone).
 - Mentor, Techstars Northwestern Medicine Healthcare Accelerator.
 
