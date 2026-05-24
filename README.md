@@ -11,6 +11,10 @@ Product leader building decision infrastructure for healthcare, AI, and other hi
   <a href="https://x.com/kanavjain">X</a>
 </p>
 
+<p align="center">
+  <img src="docs/assets/zz-plant-demo.gif" alt="zz-plant demo animation" width="720">
+</p>
+
 </div>
 
 ---
@@ -31,12 +35,23 @@ My background runs through healthcare product leadership, founder/CEO work, and 
 
 ## Selected Repos
 
-- [refract-org/refract](https://github.com/refract-org/refract) - deterministic observation engine for public revision histories.
-- [zz-plant/stims](https://github.com/zz-plant/stims) - browser music visualizer inspired by MilkDrop/projectM.
-- [zz-plant/whether](https://github.com/zz-plant/whether) - operating posture from public macro signals.
-- [zz-plant/bread](https://github.com/zz-plant/bread) - archive for the BREAD music collective.
-- [zz-plant/bookkit](https://github.com/zz-plant/bookkit) - recompilable books as software.
-- [zz-plant/blog](https://github.com/zz-plant/blog) - custom publishing and newsletter stack for The Crumple Zone.
+| Repo | Scene | What it is |
+| --- | --- | --- |
+| [refract-org/refract](https://github.com/refract-org/refract) | `pipeline` | Deterministic observation engine — structured change events from Wikipedia revision histories |
+| [zz-plant/stims](https://github.com/zz-plant/stims) | `signals` | Browser music visualizer — MilkDrop-inspired, audio-reactive, WebGL |
+| [zz-plant/whether](https://github.com/zz-plant/whether) | `signals` | Operating posture from public macro signals — Next.js, Cloudflare |
+| [zz-plant/bread](https://github.com/zz-plant/bread) | `archive` | Music collective archive — Astro SSG, Leaflet maps, PWA |
+| [zz-plant/bookkit](https://github.com/zz-plant/bookkit) | `book` | Recompilable books as software — Astro monorepo, MCP API, frame validators |
+| [zz-plant/blog](https://github.com/zz-plant/blog) | `cards` | Custom publication + newsletter stack — D1 subscriber DB, Worker API, queue dispatch |
+| [zz-plant/sabnzbd-mcp](https://github.com/zz-plant/sabnzbd-mcp) | `queue` | MCP server for SABnzbd — stdio, pure Python, zero dependencies |
+| [zz-plant/toolchain-visualizer](https://github.com/zz-plant/toolchain-visualizer) | `hex` | 3D constellation map — React + Three.js + Zustand |
+| [zz-plant/zz-plant](https://github.com/zz-plant/zz-plant) | `profile` | This profile README — project index and operating thesis |
+
+Each repo has a README GIF (`docs/assets/repo-demo.gif`) and a social sharing image (`docs/assets/repo-og.png`). The scene type, accent color, and metadata are shared across all four web properties (kanav.net, nextconsensus-site, ethotechnics.org, thecrumple.zone) via a shared scene rendering module.
+
+## Visual Identity
+
+Every project follows a scene-based visual identity system. Each repo's metadata — accent color drawn from actual CSS tokens, scene type derived from architecture, labels from `package.json` scripts — drives its README GIF, OG social image, and web preview cards. The same `renderCompactScene()` function renders inline SVG previews across all four web properties.
 
 ## What I Care About
 
