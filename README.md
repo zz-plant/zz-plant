@@ -2,7 +2,7 @@
 
 # Kanav Jain
 
-Product leader building decision infrastructure for healthcare, AI, and other high-stakes systems.
+I build healthcare decision infrastructure: tools for evidence, review, escalation, and institutional memory.
 
 <p>
   <a href="https://kanav.net">kanav.net</a> ·
@@ -19,55 +19,59 @@ Product leader building decision infrastructure for healthcare, AI, and other hi
 
 ---
 
-I work on systems where the hard part is not the interface. It is the operating logic underneath it: who owns the decision, what evidence counts, what happens when the system is wrong, and how teams recover without hiding the failure.
+Most of my work is in healthcare systems where decisions need to be explainable after the fact.
 
-My background runs through healthcare product leadership, founder/CEO work, and systems research. I was the early product lead for Doximity Dialer, later worked on care navigation and healthcare platform strategy, and now spend most of my time on decision infrastructure, public-knowledge observability, and governance systems that leave a usable trail.
+That has meant clinician communication tools, care navigation, physician financial infrastructure, clinical AI review, and evidence workflows for disputed medical claims. The adjacent work — public-knowledge provenance, AI governance, writing, and small infrastructure projects — comes from the same concern: decisions should leave a record people can actually use.
+
+I am usually interested in the layer beneath the interface: who owns the decision, what evidence was available, what gets logged, what happens when the system is wrong, and whether the reasoning can be reconstructed later.
 
 ## Building Now
 
 | Project | What it is | Status |
 | --- | --- | --- |
-| [NextConsensus](https://nextconsensus.com) | Source-backed review briefs for contested healthcare claims before coverage, formulary, and market-access decisions lock in. | Commercial proof sprint |
-| [Refract](https://github.com/refract-org/refract) | Open-source claim-history infrastructure for public knowledge. It turns MediaWiki revision history into deterministic event streams. | Active OSS |
-| [The Crumple Zone](https://thecrumple.zone) | Field writing on systems, burden, governance, neurodivergence, and institutional repair. | Active publication |
+| [NextConsensus](https://nextconsensus.com) | Review briefs for contested healthcare claims before coverage, formulary, and market-access decisions harden around stale assumptions. | Commercial proof sprint |
 | [Ethotechnics Studio](https://ethotechnics.com) | Clinical AI safety evaluation and governance advisory for health plans, healthcare AI companies, and investors. | Active client practice |
+| [Refract](https://github.com/refract-org/refract) | Open-source infrastructure for observing claim changes in public knowledge systems, starting with MediaWiki revision history. | Active OSS |
+| [The Crumple Zone](https://thecrumple.zone) | Essays on burden, governance, healthcare, neurodivergence, institutional repair, and AI safety. | Active publication |
 | [Whether](https://whether.work) | Macro signal translation into operating posture and decision artifacts for startup leaders. | Concept and technical scoping |
 
 ## Selected Repos
 
 | Repo | Scene | What it is |
 | --- | --- | --- |
-| [refract-org/refract](https://github.com/refract-org/refract) | `pipeline` | Deterministic observation engine — structured change events from Wikipedia revision histories |
-| [zz-plant/stims](https://github.com/zz-plant/stims) | `signals` | Browser music visualizer — MilkDrop-inspired, audio-reactive, WebGL |
-| [zz-plant/whether](https://github.com/zz-plant/whether) | `signals` | Operating posture from public macro signals — Next.js, Cloudflare |
-| [zz-plant/bread](https://github.com/zz-plant/bread) | `archive` | Music collective archive — Astro SSG, Leaflet maps, PWA |
-| [zz-plant/bookkit](https://github.com/zz-plant/bookkit) | `book` | Recompilable books as software — Astro monorepo, MCP API, frame validators |
-| [zz-plant/blog](https://github.com/zz-plant/blog) | `cards` | Custom publication + newsletter stack — D1 subscriber DB, Worker API, queue dispatch |
-| [zz-plant/sabnzbd-mcp](https://github.com/zz-plant/sabnzbd-mcp) | `queue` | MCP server for SABnzbd — stdio, pure Python, zero dependencies |
-| [zz-plant/toolchain-visualizer](https://github.com/zz-plant/toolchain-visualizer) | `hex` | 3D constellation map — React + Three.js + Zustand |
-| [zz-plant/zz-plant](https://github.com/zz-plant/zz-plant) | `profile` | This profile README — project index and operating thesis |
+| [refract-org/refract](https://github.com/refract-org/refract) | `pipeline` | Structured change events from Wikipedia revision histories |
+| [zz-plant/stims](https://github.com/zz-plant/stims) | `signals` | Browser music visualizer; MilkDrop-inspired, WebGL, audio-reactive |
+| [zz-plant/whether](https://github.com/zz-plant/whether) | `signals` | Public macro signals translated into operating posture |
+| [zz-plant/bread](https://github.com/zz-plant/bread) | `archive` | Archive for BREAD, a music party I co-founded in San Francisco |
+| [zz-plant/bookkit](https://github.com/zz-plant/bookkit) | `book` | Recompilable books as software |
+| [zz-plant/blog](https://github.com/zz-plant/blog) | `cards` | Custom publication and newsletter stack |
+| [zz-plant/sabnzbd-mcp](https://github.com/zz-plant/sabnzbd-mcp) | `queue` | Small MCP server for SABnzbd; stdio, Python, no dependencies |
+| [zz-plant/toolchain-visualizer](https://github.com/zz-plant/toolchain-visualizer) | `hex` | 3D map of a toolchain constellation |
+| [zz-plant/zz-plant](https://github.com/zz-plant/zz-plant) | `profile` | This README |
 
-Each repo has a README GIF (`docs/assets/repo-demo.gif`) and a social sharing image (`docs/assets/repo-og.png`). The scene type, accent color, and metadata are shared across all four web properties (kanav.net, nextconsensus-site, ethotechnics.org, thecrumple.zone) via a shared scene rendering module.
+Most repos include a demo GIF at `docs/assets/repo-demo.gif` and an OG image at `docs/assets/repo-og.png`.
 
-## Visual Identity
+The projects also share a visual system. Repo metadata drives scene type, accent color, preview cards, README GIFs, and social images across `kanav.net`, `nextconsensus.com`, `ethotechnics.com`, and `thecrumple.zone`.
 
-Every project follows a scene-based visual identity system. Each repo's metadata — accent color drawn from actual CSS tokens, scene type derived from architecture, labels from `package.json` scripts — drives its README GIF, OG social image, and web preview cards. The same `renderCompactScene()` function renders inline SVG previews across all four web properties.
+## Recurring Questions
 
-## What I Care About
-
-- Decision records that are useful after the meeting ends.
-- Human-in-the-loop systems with real override and repair paths.
-- Public knowledge provenance: what changed, when, where, and with what source trail.
-- Regulated healthcare workflows where trust depends on clear ownership, timing, and recourse.
-- Interfaces that reduce cognitive load instead of moving hidden work onto users and operators.
+- What evidence was available when the healthcare decision was made?
+- Who owned the call?
+- Could the decision be reviewed later?
+- What happens when the system is wrong?
+- Can a clinician, patient, reviewer, or operator escalate the issue?
+- Is the interface reducing work, or moving it somewhere less visible?
+- Is the AI system being evaluated through artifacts people can inspect?
 
 ## Background
 
-- Early product lead for Doximity Dialer; Doximity has since reported large-scale clinician adoption across its telemedicine tools.
-- Founder and former CEO of Andwise (raised funding, medical advisory board of over 50 physicians).
-- Director of Product at Transcarent, CancerCompass / CTCA Marketplace; Epic EHR implementation.
-- Evaluates clinical AI safety through Ethotechnics Studio (ethotechnics.com).
-- Writes about decision infrastructure and AI safety at The Crumple Zone (thecrumple.zone).
+- Early product lead for Doximity Dialer.
+- Founder and former CEO of Andwise, a physician financial-wellness company with a 50+ physician medical advisory board.
+- Former Director of Product at Transcarent.
+- Worked on CancerCompass / CTCA Marketplace and Epic EHR implementation.
+- Evaluate clinical AI safety through [Ethotechnics Studio](https://ethotechnics.com).
+- Build evidence-review infrastructure for contested healthcare claims through [NextConsensus](https://nextconsensus.com).
+- Write at [The Crumple Zone](https://thecrumple.zone).
 - Mentor, Techstars Northwestern Medicine Healthcare Accelerator.
 
 ## Contact
