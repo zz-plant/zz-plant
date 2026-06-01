@@ -2,7 +2,7 @@
 
 # Kanav Jain
 
-I build healthcare decision infrastructure: tools for evidence, review, escalation, and institutional memory.
+I help healthcare teams make important decisions they can explain, challenge, update, and fix.
 
 <p>
   <a href="https://kanav.net">kanav.net</a> ·
@@ -19,11 +19,11 @@ I build healthcare decision infrastructure: tools for evidence, review, escalati
 
 ---
 
-Most of my work is in healthcare systems where decisions need to be explainable after the fact.
+I work on the gap between "the system says X" and "someone needs to safely rely on, question, update, or reverse X." That usually means clinical workflows, coverage or care-navigation decisions, evidence trails, override paths, and just enough structure to catch mistakes and fix them quickly.
 
-That has meant clinician communication tools, care navigation, physician financial infrastructure, clinical AI review, and evidence workflows for disputed medical claims. The adjacent work — public-knowledge provenance, AI governance, writing, and small infrastructure projects — comes from the same concern: decisions should leave a record people can actually use.
+U.S. healthcare has spent 15 years moving decisions into software. My work is about making sure responsibility moves with them.
 
-I am usually interested in the layer beneath the interface: who owns the decision, what evidence was available, what gets logged, what happens when the system is wrong, and whether the reasoning can be reconstructed later.
+Across every role — molecular biology research, EHR implementation, clinician communication at Doximity, oncology navigation at CancerCompass, care navigation at Transcarent, physician financial support at Andwise — one pattern held: the higher the stakes, the harder it was to trace, question, or undo a decision. So I build toward the gaps where that matters most.
 
 ## Building Now
 
@@ -37,46 +37,37 @@ I am usually interested in the layer beneath the interface: who owns the decisio
 
 ## Selected Repos
 
-| Repo | Scene | What it is |
-| --- | --- | --- |
-| [refract-org/refract](https://github.com/refract-org/refract) | `pipeline` | Structured change events from Wikipedia revision histories |
-| [zz-plant/stims](https://github.com/zz-plant/stims) | `signals` | Browser music visualizer; MilkDrop-inspired, WebGL, audio-reactive |
-| [zz-plant/whether](https://github.com/zz-plant/whether) | `signals` | Public macro signals translated into operating posture |
-| [zz-plant/bread](https://github.com/zz-plant/bread) | `archive` | Archive for BREAD, a music party I co-founded in San Francisco |
-| [zz-plant/bookkit](https://github.com/zz-plant/bookkit) | `book` | Recompilable books as software |
-| [zz-plant/blog](https://github.com/zz-plant/blog) | `cards` | Custom publication and newsletter stack |
-| [zz-plant/sabnzbd-mcp](https://github.com/zz-plant/sabnzbd-mcp) | `queue` | Small MCP server for SABnzbd; stdio, Python, no dependencies |
-| [zz-plant/toolchain-visualizer](https://github.com/zz-plant/toolchain-visualizer) | `hex` | 3D map of a toolchain constellation |
-| [zz-plant/zz-plant](https://github.com/zz-plant/zz-plant) | `profile` | This README |
+- [refract-org/refract](https://github.com/refract-org/refract) — structured change events from Wikipedia revision histories
+- [zz-plant/stims](https://github.com/zz-plant/stims) — live at toil.fyi; 1,868 presets, AI generation, CodeMirror editor, mic/tab input
+- [zz-plant/whether](https://github.com/zz-plant/whether) — weekly operating brief from macro signals for startup leaders
+- [zz-plant/bread](https://github.com/zz-plant/bread) — archive for BREAD, a music party I co-founded in San Francisco
+- [zz-plant/blog](https://github.com/zz-plant/blog) — custom publication and newsletter stack
+- [zz-plant/sabnzbd-mcp](https://github.com/zz-plant/sabnzbd-mcp) — small MCP server for SABnzbd; stdio, Python, no dependencies
+- [zz-plant/toolchain-visualizer](https://github.com/zz-plant/toolchain-visualizer) — Capability Graph: OpenCode capability graph with a Civ-era tech tree; maturity, decay, pathfinding
 
-Most repos include a demo GIF at `docs/assets/repo-demo.gif` and an OG image at `docs/assets/repo-og.png`.
+## What I Care About
 
-The projects also share a visual system. Repo metadata drives scene type, accent color, preview cards, README GIFs, and social images across `kanav.net`, `nextconsensus.com`, `ethotechnics.com`, and `thecrumple.zone`.
-
-## Recurring Questions
-
-- What evidence was available when the healthcare decision was made?
-- Who owned the call?
-- Could the decision be reviewed later?
-- What happens when the system is wrong?
-- Can a clinician, patient, reviewer, or operator escalate the issue?
-- Is the interface reducing work, or moving it somewhere less visible?
-- Is the AI system being evaluated through artifacts people can inspect?
+- Decision records that are useful after the meeting ends.
+- Human-in-the-loop systems with real override and repair paths.
+- Public knowledge provenance: what changed, when, where, and with what source trail.
+- Regulated healthcare workflows where trust depends on clear ownership, timing, and recourse.
+- Interfaces that reduce cognitive load instead of moving hidden work onto users and operators.
+- AI systems evaluated through artifacts people can inspect, not just benchmarks they can game.
 
 ## Background
 
-- Early product lead for Doximity Dialer.
-- Founder and former CEO of Andwise, a physician financial-wellness company with a 50+ physician medical advisory board.
-- Former Director of Product at Transcarent.
-- Worked on CancerCompass / CTCA Marketplace and Epic EHR implementation.
-- Evaluate clinical AI safety through [Ethotechnics Studio](https://ethotechnics.com).
-- Build evidence-review infrastructure for contested healthcare claims through [NextConsensus](https://nextconsensus.com).
-- Write at [The Crumple Zone](https://thecrumple.zone).
-- Mentor, Techstars Northwestern Medicine Healthcare Accelerator.
+- **Early product lead for Doximity Dialer.** Patients don't answer calls from unknown numbers — that single observation drove the product. Dialer went on to power 110M+ visits from 300K+ clinicians. iOS reviews climbed from 3.7 to 4.8 stars during my mobile work.
+- **Co-founded Andwise**, a physician financial-wellness company. Raised $240K, grew to 1,200+ physician users and a 700-member community, convened a 50+ physician medical advisory board.
+- **Led digital products at CancerCompass / CTCA Marketplace**, an oncology navigation platform serving 30MM annual visitors. Cut bounce rate 25%, lifted chat conversions 267%.
+- **Directed care-navigation product at Transcarent** across Surgery, Urgent Care, Behavioral Health, and Oncology Care.
+- **Configured EHR workflows at Epic**, where a single misrouted alert could bury a critical lab result. The workflow around the clinician was usually the constraint, not the clinician.
+- **Studied RNA folding dynamics at Georgia Tech**, co-authoring a book chapter in the ACS Symposium Series at 19.
+- **Mentor**, Techstars Northwestern Medicine Healthcare Accelerator.
 
 ## Contact
 
-- Website: [kanav.net](https://kanav.net)
-- Writing: [thecrumple.zone](https://thecrumple.zone)
-- GitHub: [github.com/zz-plant](https://github.com/zz-plant)
-- X: [@kanavjain](https://x.com/kanavjain)
+If you're working on a healthcare AI product that needs to survive real workflow, review, audit, override, and mistakes, I'd like to hear about it.
+
+- [kanav@kanav.net](mailto:kanav@kanav.net)
+- [kanav.net](https://kanav.net)
+- [github.com/zz-plant](https://github.com/zz-plant)
