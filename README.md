@@ -25,7 +25,7 @@ I'm especially interested in the layer around the model: how software tracks wha
 - **Ambit** — models what an agent system can actually do across models, tools, machines, permissions, and humans—and where it still gets stuck.
 - **Refract** — tracks changes in source material with provenance, so downstream systems know what changed rather than repeatedly rereading the world.
 - **NextConsensus** — forecasts specific actions by healthcare institutions from accumulating public evidence.
-- **whether.work** — monitors the assumptions behind business decisions and flags when changing conditions make them worth revisiting.
+- **whether.work** — turns macro and capital conditions into a weekly answer for startup leaders: how aggressively to hire, spend, raise, and expand, with explicit stop and reopen conditions.
 - **Stims** — programmable audio-reactive visuals, partly exploring how software can give users more control over sensory environments.
 
 A lot of AI capability is limited less by the model than by the surrounding system: missing context, stale state, weak feedback loops, brittle permissions, and humans repeatedly filling gaps by hand. I'm interested in building that surrounding layer better.
@@ -45,7 +45,7 @@ U.S. healthcare has spent 15 years moving decisions into software. My work is ab
 
 - [refract-org/refract](https://github.com/refract-org/refract) — structured change events from public knowledge sources, starting with MediaWiki revision history
 - [zz-plant/stims](https://github.com/zz-plant/stims) — live at toil.fyi; 1,868 presets, AI generation, CodeMirror editor, mic/tab input
-- [zz-plant/whether](https://github.com/zz-plant/whether) — weekly operating brief from macro signals for startup leaders
+- [zz-plant/whether](https://github.com/zz-plant/whether) — deterministic engine that turns macro signals into a weekly Boldness Budget and bounded operating rules for hiring, spend, fundraising, and expansion
 - [zz-plant/ambit](https://github.com/zz-plant/ambit) — capability graph for agent systems; what they can do and what they may do
 - [zz-plant/blog](https://github.com/zz-plant/blog) — custom publication and newsletter stack
 - [zz-plant/bread](https://github.com/zz-plant/bread) — archive for BREAD, a music party I co-founded in San Francisco
