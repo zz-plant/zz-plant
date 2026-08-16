@@ -2,7 +2,7 @@
 
 # Kanav Jain
 
-I build healthcare AI products and experimental software around **change, decisions, and human-machine systems**.
+I build healthcare AI products and experimental software around **agent systems, decision infrastructure, and reliable adaptation to changing information**.
 
 <p>
   <a href="https://kanav.net">kanav.net</a> ·
@@ -18,15 +18,17 @@ I build healthcare AI products and experimental software around **change, decisi
 
 </div>
 
+I'm especially interested in the layer around the model: how software tracks what changed, preserves provenance, knows when assumptions are stale, and identifies repeated human work that should become durable system capability.
+
 ## Recent projects
 
-- **Ambit** — a capability graph for AI agent stacks: what they can do, what they're missing, and where they still depend on you.
-- **NextConsensus** — forecasts specific actions by healthcare institutions before those actions happen.
-- **whether.work** — monitors external conditions and flags business decisions whose assumptions may have gone stale.
-- **Refract** — tracks changes in public sources with provenance.
-- **Stims** — programmable audio-reactive visuals.
+- **Ambit** — models what an agent system can actually do across models, tools, machines, permissions, and humans—and where it still gets stuck.
+- **Refract** — tracks changes in source material with provenance, so downstream systems know what changed rather than repeatedly rereading the world.
+- **NextConsensus** — forecasts specific actions by healthcare institutions from accumulating public evidence.
+- **whether.work** — monitors the assumptions behind business decisions and flags when changing conditions make them worth revisiting.
+- **Stims** — programmable audio-reactive visuals, partly exploring how software can give users more control over sensory environments.
 
-A recurring question across the work: **what is a person repeatedly having to notice, remember, infer, or do manually that software could make explicit?**
+A lot of AI capability is limited less by the model than by the surrounding system: missing context, stale state, weak feedback loops, brittle permissions, and humans repeatedly filling gaps by hand. I'm interested in building that surrounding layer better.
 
 ## Healthcare background
 
