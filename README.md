@@ -13,7 +13,7 @@ I build healthcare AI products and experimental software around **agent systems,
 </p>
 
 <p align="center">
-  <img src="docs/assets/zz-plant-demo.gif" alt="zz-plant demo animation" width="720">
+  <img src="docs/assets/zz-plant-layer.svg" alt="The layer around the model: Refract notices what changed, NextConsensus anticipates what happens next, Whether decides how boldly to act, Ambit expands capability, Stims controls the sensory environment" width="720">
 </p>
 
 </div>

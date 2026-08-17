@@ -1,0 +1,142 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 200" role="img" aria-label="The layer around the model: Refract notices what changed, NextConsensus anticipates what happens next, Whether decides how boldly to act, Ambit expands capability, Stims controls the sensory environment.">
+  <title>The layer around the model</title>
+  <style>
+    .panel { fill: #f6f4ec; }
+    .edge { stroke: #dcdcdc; }
+    .eyebrow {
+      font: 600 11px ui-monospace, "SF Mono", Menlo, monospace;
+      letter-spacing: 3px;
+      fill: #7a7a7a;
+    }
+    .name {
+      font: 600 15px "Bricolage Grotesque", ui-sans-serif, system-ui, "Segoe UI", sans-serif;
+      fill: #1a1a1a;
+    }
+    .tag {
+      font: 400 11px ui-sans-serif, system-ui, "Segoe UI", sans-serif;
+      fill: #4a4a4a;
+    }
+    .footer {
+      font: 400 11px ui-sans-serif, system-ui, "Segoe UI", sans-serif;
+      fill: #7a7a7a;
+    }
+    .spine { stroke: #79641f; stroke-opacity: 0.45; stroke-width: 1; }
+    .arrow { fill: #79641f; fill-opacity: 0.55; }
+    .node-outline { stroke: #59632f; stroke-opacity: 0.5; fill: none; }
+    .node-core { fill: #59632f; opacity: 0.14; }
+    .node-ring { stroke: #59632f; fill: none; transform-box: fill-box; transform-origin: center; }
+    .pulse-dot { fill: #9c4a24; }
+
+    /* A single signal travels the spine left to right over the same cycle the
+       nodes light in, so the two reads agree. */
+    .pulse { animation: travel 9s linear infinite; }
+    @keyframes travel {
+      0%   { transform: translateX(0); opacity: 0; }
+      5%   { opacity: 1; }
+      90%  { opacity: 1; }
+      100% { transform: translateX(540px); opacity: 0; }
+    }
+
+    .n1 { animation: activate 9s linear infinite; animation-delay: 0s; }
+    .n2 { animation: activate 9s linear infinite; animation-delay: 2.25s; }
+    .n3 { animation: activate 9s linear infinite; animation-delay: 4.5s; }
+    .n4 { animation: activate 9s linear infinite; animation-delay: 6.75s; }
+    .n5 { animation: activate 9s linear infinite; animation-delay: 9s; }
+    @keyframes activate {
+      0%   { opacity: 0.14; }
+      14%  { opacity: 1; }
+      28%  { opacity: 0.14; }
+      100% { opacity: 0.14; }
+    }
+
+    .r1 { animation: ring 9s linear infinite; animation-delay: 0s; }
+    .r2 { animation: ring 9s linear infinite; animation-delay: 2.25s; }
+    .r3 { animation: ring 9s linear infinite; animation-delay: 4.5s; }
+    .r4 { animation: ring 9s linear infinite; animation-delay: 6.75s; }
+    .r5 { animation: ring 9s linear infinite; animation-delay: 9s; }
+    @keyframes ring {
+      0%   { opacity: 0; transform: scale(1); }
+      12%  { opacity: 0.6; }
+      30%  { opacity: 0; transform: scale(2.4); }
+      100% { opacity: 0; transform: scale(2.4); }
+    }
+
+    @media (prefers-color-scheme: dark) {
+      .panel { fill: #1e1e1e; }
+      .edge { stroke: #404040; }
+      .eyebrow { fill: #808080; }
+      .name { fill: #e0e0e0; }
+      .tag { fill: #b0b0b0; }
+      .footer { fill: #808080; }
+      .spine { stroke: #bca35f; }
+      .arrow { fill: #bca35f; }
+      .node-outline { stroke: #afb878; }
+      .node-core { fill: #afb878; }
+      .node-ring { stroke: #afb878; }
+      .pulse-dot { fill: #c9854f; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .pulse, .node-core, .node-ring { animation: none; }
+      .pulse { opacity: 1; }
+      .node-core { opacity: 0.9; }
+    }
+  </style>
+
+  <rect class="panel" x="0.5" y="0.5" width="719" height="199" />
+  <rect class="edge" x="0.5" y="0.5" width="719" height="199" fill="none" />
+
+  <text class="eyebrow" x="360" y="46" text-anchor="middle">THE LAYER AROUND THE MODEL</text>
+
+  <line class="spine" x1="78" y1="112" x2="642" y2="112" />
+  <polygon class="arrow" points="642,105 652,112 642,119" />
+
+  <!-- Nodes: outline + animated core + ripple ring -->
+  <g>
+    <rect class="node-outline" x="83.5" y="105.5" width="13" height="13" />
+    <rect class="node-core n1" x="83.5" y="105.5" width="13" height="13" />
+    <circle class="node-ring r1" cx="90" cy="112" r="7" />
+    <text class="name" x="90" y="146" text-anchor="middle">Refract</text>
+    <text class="tag" x="90" y="163" text-anchor="middle">what changed?</text>
+  </g>
+
+  <g>
+    <rect class="node-outline" x="218.5" y="105.5" width="13" height="13" />
+    <rect class="node-core n2" x="218.5" y="105.5" width="13" height="13" />
+    <circle class="node-ring r2" cx="225" cy="112" r="7" />
+    <text class="name" x="225" y="146" text-anchor="middle">NextConsensus</text>
+    <text class="tag" x="225" y="163" text-anchor="middle">what's next?</text>
+  </g>
+
+  <g>
+    <rect class="node-outline" x="353.5" y="105.5" width="13" height="13" />
+    <rect class="node-core n3" x="353.5" y="105.5" width="13" height="13" />
+    <circle class="node-ring r3" cx="360" cy="112" r="7" />
+    <text class="name" x="360" y="146" text-anchor="middle">whether.work</text>
+    <text class="tag" x="360" y="163" text-anchor="middle">how boldly?</text>
+  </g>
+
+  <g>
+    <rect class="node-outline" x="488.5" y="105.5" width="13" height="13" />
+    <rect class="node-core n4" x="488.5" y="105.5" width="13" height="13" />
+    <circle class="node-ring r4" cx="495" cy="112" r="7" />
+    <text class="name" x="495" y="146" text-anchor="middle">Ambit</text>
+    <text class="tag" x="495" y="163" text-anchor="middle">what can we do?</text>
+  </g>
+
+  <g>
+    <rect class="node-outline" x="623.5" y="105.5" width="13" height="13" />
+    <rect class="node-core n5" x="623.5" y="105.5" width="13" height="13" />
+    <circle class="node-ring r5" cx="630" cy="112" r="7" />
+    <text class="name" x="630" y="146" text-anchor="middle">Stims</text>
+    <text class="tag" x="630" y="163" text-anchor="middle">what to feel?</text>
+  </g>
+
+  <!-- The signal in transit: starts at the first node, travels 540px to the last -->
+  <g class="pulse" transform="translate(90,112)">
+    <circle class="pulse-dot" r="3.5" />
+    <circle class="pulse-dot" r="8" opacity="0.18" />
+  </g>
+
+  <text class="footer" x="360" y="188" text-anchor="middle">noticing change · anticipating · deciding how boldly · expanding capability · controlling the environment</text>
+</svg>
