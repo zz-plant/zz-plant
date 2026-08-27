@@ -34,10 +34,10 @@ A lot of AI capability is limited less by the model than by the surrounding syst
 
 U.S. healthcare has spent 15 years moving decisions into software. My work is about making sure responsibility moves with them. I spent 14 years as a product lead across Epic, Doximity, CancerCompass, Transcarent, and Andwise — building products where decisions have to be traceable, challengeable, and reversible.
 
-- **Doximity Dialer** — founding product lead. Patients don't answer calls from unknown numbers — that single observation drove the product. Dialer now powers 300,000+ daily visits across 200+ health systems.
+- **Doximity Dialer** — founding product lead. Patients don't answer calls from unknown numbers — that single observation drove the product. Nine years after I left, Dialer carries 300,000+ calls on an average workday across 250+ hospitals and health systems — #1 Best in KLAS Telehealth Video for five consecutive years.
 - **CancerCompass / CTCA Marketplace** — led digital products for an oncology navigation platform serving 30MM annual visitors. Cut bounce rate 25%, lifted chat conversions 267%.
 - **Transcarent** — directed care-navigation product across Surgery, Urgent Care, Behavioral Health, and Oncology Care.
-- **Epic** — configured EHR workflows, where a single misrouted alert could bury a critical lab result. The workflow around the clinician was usually the constraint, not the clinician.
+- **Epic** — owned what happened to eight client organizations after installation: a 477-bed cancellation risk worked back to a reference account, a 134-year-old health system taken online, and the federal quality-reporting escalation path. The workflow around the clinician was usually the constraint, not the clinician.
 - **Andwise** — co-founded a physician financial-wellness company. Raised $240K, grew to 1,200+ physician users and a 700-member community.
 - **Georgia Tech** — studied RNA folding dynamics, co-authoring a chapter in the ACS Symposium Series at 19.
 
