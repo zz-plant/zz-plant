@@ -5,7 +5,7 @@ This repository renders the GitHub profile README for the user **zz-plant** (Kan
 ## Layout
 
 - `README.md` — the profile itself.
-- `docs/assets/` — every image the profile references, plus the social/OG images used by the portfolio sites (`kanav.net`, `nextconsensus.com`, `ethotechnics.org`, `thecrumple.zone`).
+- `docs/assets/` — every image the profile references, and nothing else. (It once held a `zz-plant-*` set of social/OG cards described as serving the portfolio sites; none of those sites used them — each serves its own OG image — and they were a mock project-index card, not a capture. Removed 2026-09-01.)
 
 ## Rules
 

@@ -49,7 +49,7 @@ No model and no inference in the observation path — the same source produces t
 
 ## Ambit
 
-**Models what an agent system can actually do** across models, tools, machines, permissions, and humans — and where it still gets stuck.
+**Models what an agent system can actually do** across models, tools, machines, permissions, and humans — and where it still gets stuck. What an assembled agent *can* do is kept separate from what it *may* do.
 
 <a href="https://zz-plant.github.io/ambit/"><img src="docs/assets/ambit.gif" alt="Ambit capability graph showing reachable capabilities, dependencies, and blast radius for a simulated outage" width="720"></a>
 
@@ -89,7 +89,9 @@ Deterministic: the same inputs produce the same call. Every posture carries an e
 
 <a href="https://ethotechnics.org"><img src="docs/assets/ethotechnics.png" alt="Ethotechnics Institute — open commons for accountable AI governance" width="720"></a>
 
-Standards, checklists, worked examples, and diagnostics, organized so you enter with a real situation — a live decision, an incident, a policy gap — and leave with named owners, clocks, and evidence rather than a maturity score.
+Standards, checklists, worked examples, and diagnostics, organized so you enter with a real situation — a live decision, an incident, a policy gap — and leave with named owners, clocks, and evidence rather than a maturity score. Seven proposed standards, crosswalked to NIST AI RMF, ISO/IEC 42001, and the EU AI Act.
+
+To see the operating model applied, the [Reliance Lab](https://kanav.net/lab/) walks one composite deployment — a clinical summary assistant, six months in, with new information on the table — through the decision of whether to keep relying on it.
 
 [**Live at ethotechnics.org**](https://ethotechnics.org) · [zz-plant/ethotechnics.org](https://github.com/zz-plant/ethotechnics.org)
 
@@ -124,12 +126,12 @@ The goal is not to declare truth. It's to show what changed, why it matters for 
 
 U.S. healthcare has spent 15 years moving decisions into software. My work is about making sure responsibility moves with them. I spent 14 years as a product lead across Epic, Doximity, CancerCompass, Transcarent, and Andwise — building products where decisions have to be traceable, challengeable, and reversible.
 
-- **Doximity Dialer** — founding product lead. Patients don't answer calls from unknown numbers — that single observation drove the product. Nine years after I left, Dialer carries 300,000+ calls on an average workday across 250+ hospitals and health systems — #1 Best in KLAS Telehealth Video for five consecutive years.
+- **Doximity Dialer** — founding product lead. Built the identity layer that let a physician call a patient from their own phone while the patient saw the office number — so the call got answered and the physician's cell number stayed private. Nine years after I left, Dialer carries 300,000+ calls on an average workday across 250+ hospitals and health systems — #1 Best in KLAS Telehealth Video for five consecutive years.
 - **CancerCompass / CTCA Marketplace** — led digital products for an oncology navigation platform serving 30MM annual visitors. Cut bounce rate 25%, lifted chat conversions 267%.
 - **Transcarent** — directed care-navigation product across Surgery, Urgent Care, Behavioral Health, and Oncology Care.
 - **Epic** — owned what happened to eight client organizations after installation: a 477-bed cancellation risk worked back to a reference account, a 134-year-old health system taken online, and the federal quality-reporting escalation path. The workflow around the clinician was usually the constraint, not the clinician.
-- **Andwise** — co-founded a physician financial-wellness company. Raised $240K, grew to 1,200+ physician users and a 700-member community.
-- **Georgia Tech** — studied RNA folding dynamics, co-authoring a chapter in the ACS Symposium Series at 19.
+- **Andwise** — co-founded a physician financial-wellness company: software that read a physician's employment contract and flagged the clauses worth arguing about, with a named reviewer behind every analysis. Raised $240K, grew to 1,200+ physician users and a 700-member community; wound down in 2024.
+- **Georgia Tech** — studied RNA folding dynamics; first author on a chapter in the ACS Symposium Series (Vol. 1082, 2011) on the thermodynamics of sRNA–mRNA interactions.
 
 ## Contact
 
