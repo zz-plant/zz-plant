@@ -2,7 +2,7 @@
 
 # Kanav Jain
 
-I build healthcare AI products and experimental software around **agent systems, decision infrastructure, and reliable adaptation to changing information**.
+I turn new AI capabilities into products that hospitals and other cautious institutions will deploy — building around **agent systems, decision infrastructure, and reliable adaptation to changing information**.
 
 <p>
   <a href="https://kanav.net">kanav.net</a> ·
@@ -17,9 +17,9 @@ I build healthcare AI products and experimental software around **agent systems,
 
 </div>
 
-I'm especially interested in the layer around the model: how software tracks what changed, preserves provenance, knows when assumptions are stale, and identifies repeated human work that should become durable system capability.
+Every one of these projects deals with the same failure: a record that has gone out of date and is still being relied on. A guideline that no longer matches the evidence. A permission that no longer matches what the system can reach. A correction that never reached the people who acted on the error.
 
-A lot of AI capability is limited less by the model than by the surrounding system — missing context, stale state, weak feedback loops, brittle permissions, and humans repeatedly filling gaps by hand. Everything below is a working piece of that surrounding layer.
+A lot of AI capability is limited less by the model than by the surrounding system — missing context, stale state, weak feedback loops, brittle permissions, and humans repeatedly filling gaps by hand. Everything below is a working piece of that surrounding layer, built to keep authority, evidence, capability, and correction tightly coupled.
 
 ---
 
@@ -29,7 +29,7 @@ A lot of AI capability is limited less by the model than by the surrounding syst
 
 <a href="https://toil.fyi"><img src="docs/assets/stims.gif" alt="Stims rendering a MilkDrop preset in real time, reacting to audio" width="720"></a>
 
-2,679 presets, a live CodeMirror editor with MilkDrop completions and diagnostics, WebGL2 with guarded WebGPU, and audio from YouTube, mic, a file, or a browser tab. Released into the public domain.
+1,787 curated presets with measured parity, a live CodeMirror editor with MilkDrop completions and diagnostics, WebGL2 with guarded WebGPU, and audio from YouTube, mic, a file, or a browser tab. Released into the public domain.
 
 [**Live at toil.fyi**](https://toil.fyi) · [zz-plant/stims](https://github.com/zz-plant/stims) · Unlicense
 
@@ -41,7 +41,7 @@ A lot of AI capability is limited less by the model than by the surrounding syst
 
 <a href="https://github.com/refract-org/refract"><img src="docs/assets/refract.gif" alt="Refract CLI analyzing the Wikipedia history of Semaglutide and emitting structured change events" width="720"></a>
 
-No model and no inference in the observation path — the same source produces the same events every time. A hash-pinned ground-truth corpus of 16,146 events across ten benchmark pages ships as a release asset. There's a Python SDK, a web explorer, and an MCP server so an agent can query the event stream directly.
+No model and no inference in the observation path — the same source produces the same events every time, enriched with 6 byte-reproducible semantic signals (magnitude, direction, certainty, significance) without calling an LLM. A hash-pinned ground-truth corpus of 16,146 events across ten benchmark pages ships as a release asset. Includes a CLI (`@refract-org/cli`), a Python SDK (`refract-py`), a web explorer, and an MCP server so an agent can query change streams directly.
 
 [refract-org/refract](https://github.com/refract-org/refract) · [Docs](https://refract-org.github.io/refract-docs/) · AGPL-3.0
 
@@ -49,11 +49,11 @@ No model and no inference in the observation path — the same source produces t
 
 ## Ambit
 
-**Models what an agent system can actually do** across models, tools, machines, permissions, and humans — and where it still gets stuck. What an assembled agent *can* do is kept separate from what it *may* do.
+**Models what you, your agents, and your machines can jointly do** — across models, tools, machines, permissions, and human attention. Reads configurations across Claude Code, Cursor, OpenCode, Windsurf, Gemini CLI, Claude Desktop, and Codex CLI into one local graph, keeping what an assembled agent *can* do strictly separate from what it *may* do.
 
 <a href="https://zz-plant.github.io/ambit/"><img src="docs/assets/ambit.gif" alt="Ambit capability graph showing reachable capabilities, dependencies, and blast radius for a simulated outage" width="720"></a>
 
-Click a node to inspect its dependencies, verified evidence, and blast radius; simulate an outage to see what stops working. Runs as a meta-MCP server, so agents can query their own capability surface before acting.
+Click a node to inspect its dependencies, verified evidence, blast radius, and compound capabilities; simulate an outage to see what stops working. Distributable as a CLI via Homebrew (`brew install zz-plant/tap/ambit`), and runs as a meta-MCP server so agents can query their own capability surface before acting.
 
 [zz-plant/ambit](https://github.com/zz-plant/ambit) · [Interactive demo](https://zz-plant.github.io/ambit/) · MIT
 
@@ -61,11 +61,11 @@ Click a node to inspect its dependencies, verified evidence, and blast radius; s
 
 ## Whether
 
-**Turns macro and capital conditions into a weekly answer for startup leaders:** how aggressively to hire, spend, raise, and expand — with the stop and reopen conditions written down before they're needed.
+**Turns macro and capital conditions into a weekly answer for startup leaders:** how aggressively to hire, spend, raise, and expand — generating meeting-ready operating postures in under 60 seconds with stop and reopen conditions written down before they're needed.
 
 <a href="https://whether.work"><img src="docs/assets/whether.gif" alt="Whether's weekly operating call, with a boldness budget score and explicit guardrails for hiring, investment pace, and fundraising posture" width="720"></a>
 
-Deterministic: the same inputs produce the same call. Every posture carries an explicit trip condition and a reopen condition, so a reversal is a rule firing rather than a change of mood.
+Deterministic: the same inputs produce the same call. Every posture carries explicit trip conditions, reopen rules, and boldness budgets. Ships with an MCP and Agent API so autonomous systems can query operating guardrails programmatically.
 
 [**Live at whether.work**](https://whether.work)
 
@@ -77,7 +77,7 @@ Deterministic: the same inputs produce the same call. Every posture carries an e
 
 <a href="https://thecrumple.zone"><img src="docs/assets/crumplezone.png" alt="The Crumple Zone — essays on institutions and the distribution of human burden" width="720"></a>
 
-231 essays so far, on a publication and newsletter stack I built and host myself.
+265 essays so far, on a custom zero-dependency Cloudflare stack (Workers, D1, R2, newsletter delivery orchestration, and concept graph) I built and host myself.
 
 [**Live at thecrumple.zone**](https://thecrumple.zone)
 
@@ -89,7 +89,7 @@ Deterministic: the same inputs produce the same call. Every posture carries an e
 
 <a href="https://ethotechnics.org"><img src="docs/assets/ethotechnics.png" alt="Ethotechnics Institute — open commons for accountable AI governance" width="720"></a>
 
-Standards, checklists, worked examples, and diagnostics, organized so you enter with a real situation — a live decision, an incident, a policy gap — and leave with named owners, clocks, and evidence rather than a maturity score. Seven proposed standards, crosswalked to NIST AI RMF, ISO/IEC 42001, and the EU AI Act.
+Standards, checklists, worked examples, and diagnostics, organized so you enter with a real situation — a live decision, an incident, a policy gap — and leave with named owners, clocks, and evidence rather than a maturity score. Ten proposed standards (including STD-08 Delegation and STD-09 Agent Chains), the Twelve Laws of Delegated Intelligence, operational mechanisms (kill switches, appeal paths, authority registers), and interactive diagnostics (Delegation Audit, Burden Modeler). Crosswalked to NIST AI RMF, ISO/IEC 42001, and the EU AI Act.
 
 To see the operating model applied, the [Reliance Lab](https://kanav.net/lab/) walks one composite deployment — a clinical summary assistant, six months in, with new information on the table — through the decision of whether to keep relying on it.
 
@@ -115,9 +115,9 @@ The goal is not to declare truth. It's to show what changed, why it matters for 
 | [refract-org/refract-py](https://github.com/refract-org/refract-py) | Python SDK — query and export provenance event streams as DataFrames | AGPL-3.0 |
 | [refract-org/refract-ui](https://github.com/refract-org/refract-ui) | Web explorer for Refract event streams | AGPL-3.0 |
 | [refract-org/refract-docs](https://github.com/refract-org/refract-docs) | Schema reference, architecture, CLI, integration guides | AGPL-3.0 |
-| [zz-plant/stims](https://github.com/zz-plant/stims) | Browser-native MilkDrop visualizer — 2,679 presets, live `.milk` editor | Unlicense |
-| [zz-plant/ambit](https://github.com/zz-plant/ambit) | Capability graph and meta-MCP server for agent environments | MIT |
-| [zz-plant/ethotechnics.org](https://github.com/zz-plant/ethotechnics.org) | The Ethotechnics open commons site | — |
+| [zz-plant/stims](https://github.com/zz-plant/stims) | Browser-native MilkDrop visualizer — 1,787 presets, live `.milk` editor | Unlicense |
+| [zz-plant/ambit](https://github.com/zz-plant/ambit) | Capability graph, Homebrew CLI, and meta-MCP server for agent environments | MIT |
+| [zz-plant/ethotechnics.org](https://github.com/zz-plant/ethotechnics.org) | The Ethotechnics open commons site | CC-BY-SA-4.0 |
 | [zz-plant/tenant-tools](https://github.com/zz-plant/tenant-tools) | Building Ledger — privacy-first shared issue tracking for tenant buildings | — |
 
 ---
