@@ -41,7 +41,7 @@ A lot of AI capability is limited less by the model than by the surrounding syst
 
 <a href="https://github.com/refract-org/refract"><img src="docs/assets/refract.gif" alt="Refract CLI analyzing the Wikipedia history of Semaglutide and emitting structured change events" width="720"></a>
 
-No model and no inference in the observation path — the same source produces the same events every time, enriched with 6 byte-reproducible semantic signals (magnitude, direction, certainty, significance) without calling an LLM. A hash-pinned ground-truth corpus of 16,146 events across ten benchmark pages ships as a release asset. Includes a CLI (`@refract-org/cli`), a Python SDK (`refract-py`), a web explorer, and an MCP server so an agent can query change streams directly.
+No model and no inference in the observation path — the same source produces the same events every time, enriched with 6 byte-reproducible semantic signals (magnitude, direction, certainty, significance) without calling an LLM. A hash-pinned ground-truth corpus of 15,926 events across ten benchmark pages ships as a release asset. Includes a CLI (`@refract-org/cli`), a Python SDK (`refract-py`), a web explorer, and an MCP server so an agent can query change streams directly.
 
 [refract-org/refract](https://github.com/refract-org/refract) · [Docs](https://refract-org.github.io/refract-docs/) · AGPL-3.0
 
@@ -77,7 +77,7 @@ Deterministic: the same inputs produce the same call. Every posture carries expl
 
 <a href="https://thecrumple.zone"><img src="docs/assets/crumplezone.png" alt="The Crumple Zone — essays on institutions and the distribution of human burden" width="720"></a>
 
-265 essays so far, on a custom zero-dependency Cloudflare stack (Workers, D1, R2, newsletter delivery orchestration, and concept graph) I built and host myself.
+More than 230 essays so far, on a custom zero-dependency Cloudflare stack (Workers, D1, R2, newsletter delivery orchestration, and concept graph) I built and host myself.
 
 [**Live at thecrumple.zone**](https://thecrumple.zone)
 
@@ -99,11 +99,11 @@ To see the operating model applied, the [Reliance Lab](https://kanav.net/lab/) w
 
 ## NextConsensus
 
-**Decision briefs for contested healthcare claims.** NextConsensus forecasts specific actions by healthcare institutions from accumulating public evidence — tracking how a claim moves across evidence, labels, payer policy, guidelines, safety signals, and public dispute, then packaging the read as a source-backed review brief.
+**Dated, registered probabilities that the FDA, NICE, or a guideline committee acts by a set date.** Each forecast is built from the body's own review record, hashed and registered before its deadline, and scored in public once the outcome is adjudicated — for market access, HEOR, and regulatory teams working to a date.
 
-The goal is not to declare truth. It's to show what changed, why it matters for a pending decision, and where a reviewer still has usable recourse. Refract is the open-source observation engine behind part of this workflow.
+The goal is not to declare medical truth. It's to put a dated estimate on what an institution will do, under a rule anyone can check afterward. Refract is the open-source observation engine behind part of this workflow.
 
-[nextconsensus.com](https://nextconsensus.com) · [github.com/nextconsensus](https://github.com/nextconsensus)
+[nextconsensus.com](https://nextconsensus.com) · [Registered forecasts](https://nextconsensus.com/verification/) · [github.com/nextconsensus](https://github.com/nextconsensus)
 
 ---
 
