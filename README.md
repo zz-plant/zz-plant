@@ -2,7 +2,7 @@
 
 # Kanav Jain
 
-I turn new AI capabilities into products that hospitals and other cautious institutions will deploy — building around **agent systems, decision infrastructure, and reliable adaptation to changing information**.
+Product lead and engineer. I spent 14 years in healthcare technology, at Epic, Doximity, CancerCompass, Transcarent and Andwise. Since 2024 I've been building the projects below on my own.
 
 <p>
   <a href="https://kanav.net">kanav.net</a> ·
@@ -11,131 +11,144 @@ I turn new AI capabilities into products that hospitals and other cautious insti
   <a href="https://x.com/kanavjain">X</a>
 </p>
 
-<p align="center">
-  <img src="docs/assets/zz-plant-layer.svg" alt="The layer around the model: Refract notices what changed, NextConsensus anticipates what happens next, Whether decides how boldly to act, Ambit expands capability, Stims controls the sensory environment" width="720">
-</p>
-
 </div>
 
-Every one of these projects deals with the same failure: a record that has gone out of date and is still being relied on. A guideline that no longer matches the evidence. A permission that no longer matches what the system can reach. A correction that never reached the people who acted on the error.
-
-A lot of AI capability is limited less by the model than by the surrounding system — missing context, stale state, weak feedback loops, brittle permissions, and humans repeatedly filling gaps by hand. Everything below is a working piece of that surrounding layer, built to keep authority, evidence, capability, and correction tightly coupled.
+| Project | What it is |
+|---|---|
+| [Stims](#stims) | MilkDrop presets in the browser, editable while they play |
+| [Ambit](#ambit) | A map of what your AI agent setup can do, and what one more step would unlock |
+| [Refract](#refract) | Typed change events from wiki revision histories |
+| [Whether](#whether) | Weekly hiring, spend and fundraising guidance from U.S. rate and credit data |
+| [NextConsensus](#nextconsensus) | Registered forecasts of FDA, NICE and payer decisions |
+| [Ethotechnics](#ethotechnics) | Draft standards and tools for correcting automated systems after deployment |
+| [The Crumple Zone](#the-crumple-zone) | Essays on who pays when institutions get people wrong |
 
 ---
 
 ## Stims
 
-**Full-screen visuals that move to whatever you're listening to.** Every scene is a MilkDrop preset — a small visual program — compiled from raw `.milk` source in the browser, with no conversion step and no server.
+<a href="https://toil.fyi"><img src="docs/assets/stims.webp" alt="Stims playing Shifter's Curlique: the live editor opens beside the visual, a spin equation is added while it plays, and a share link carrying the edit is copied" width="720"></a>
 
-<a href="https://toil.fyi"><img src="docs/assets/stims.gif" alt="Stims rendering a MilkDrop preset in real time, reacting to audio" width="720"></a>
+<sub>Play, edit, share. Shown at 2× speed.</sub>
 
-1,787 curated presets with measured parity, a live CodeMirror editor with MilkDrop completions and diagnostics, WebGL2 with guarded WebGPU, and audio from YouTube, mic, a file, or a browser tab. Released into the public domain.
+Plays the original MilkDrop `.milk` presets in the browser, with no conversion step. The catalog has 1,787 presets, and audio can come from a browser tab, a YouTube link, the microphone, a local file or a built-in demo loop.
 
-[**Live at toil.fyi**](https://toil.fyi) · [zz-plant/stims](https://github.com/zz-plant/stims) · Unlicense
+The editor opens a preset's source while it runs, with completions, compiler diagnostics, and sliders for zoom, warp, rotation and decay. The address bar holds the whole session, edits included, so a copied link opens the edited preset for anyone. Presets measured as frequent flashers carry a warning and can be hidden. For live sets there is WebMIDI controller mapping, a two-preset cue monitor and a projector window.
 
----
+Three parts are on npm: `milkdrop-toolchain` (parser, EEL2 interpreter and JIT, shader translation to GLSL and WGSL), `eel-conformance` (82 portable test cases for the preset expression language) and `flash-guard` (WCAG 2.3.1 flash analysis).
 
-## Refract
-
-**Turns document histories into claim-state timelines.** Given a page, Refract emits a structured event stream of what changed, when, and how — every sentence introduced, modified, or removed; every citation that shifted; every revert and edit cluster.
-
-<a href="https://github.com/refract-org/refract"><img src="docs/assets/refract.gif" alt="Refract CLI analyzing the Wikipedia history of Semaglutide and emitting structured change events" width="720"></a>
-
-No model and no inference in the observation path — the same source produces the same events every time, enriched with 6 byte-reproducible semantic signals (magnitude, direction, certainty, significance) without calling an LLM. A hash-pinned ground-truth corpus of 15,926 events across ten benchmark pages ships as a release asset. Includes a CLI (`@refract-org/cli`), a Python SDK (`refract-py`), a web explorer, and an MCP server so an agent can query change streams directly.
-
-[refract-org/refract](https://github.com/refract-org/refract) · [Docs](https://refract-org.github.io/refract-docs/) · AGPL-3.0
+[**toil.fyi**](https://toil.fyi) · [zz-plant/stims](https://github.com/zz-plant/stims) · Unlicense
 
 ---
 
 ## Ambit
 
-**Models what you, your agents, and your machines can jointly do** — across models, tools, machines, permissions, and human attention. Reads configurations across Claude Code, Cursor, OpenCode, Windsurf, Gemini CLI, Claude Desktop, and Codex CLI into one local graph, keeping what an assembled agent *can* do strictly separate from what it *may* do.
+<a href="https://zz-plant.github.io/ambit/?demo=1"><img src="docs/assets/ambit.gif" alt="Ambit's capability map for one developer setup: simulating a next step highlights the two capabilities it would unlock, and switching off Shell Execution turns the nine capabilities that depend on it red" width="720"></a>
 
-<a href="https://zz-plant.github.io/ambit/"><img src="docs/assets/ambit.gif" alt="Ambit capability graph showing reachable capabilities, dependencies, and blast radius for a simulated outage" width="720"></a>
+Reads the configs of Claude Code, Cursor, OpenCode, Codex CLI and a dozen other agent runtimes into one local graph. From that graph it reports what is one step away, what is worth setting up next, which configured tools pass their checks (`ambit verify`), and what stops working if one piece fails.
 
-Click a node to inspect its dependencies, verified evidence, blast radius, and compound capabilities; simulate an outage to see what stops working. Distributable as a CLI via Homebrew (`brew install zz-plant/tap/ambit`), and runs as a meta-MCP server so agents can query their own capability surface before acting.
+Ambit is also an MCP server. An agent can ask what it can do before it tries, and when it hits a limit, propose a config change that waits for your approval.
 
-[zz-plant/ambit](https://github.com/zz-plant/ambit) · [Interactive demo](https://zz-plant.github.io/ambit/) · MIT
+`npx ambit-cli` or `brew install zz-plant/tap/ambit`
+
+[**Live demo**](https://zz-plant.github.io/ambit/?demo=1) · [zz-plant/ambit](https://github.com/zz-plant/ambit) · MIT
+
+---
+
+## Refract
+
+<a href="https://github.com/refract-org/refract"><img src="docs/assets/refract.png" alt="Refract's timeline viewer: revision events on the left (claim first seen, citation added, revert detected, claim reworded) and the word-level diff for the selected rewording on the right" width="720"></a>
+
+<sub>The timeline viewer, loaded with sample events.</sub>
+
+Compares revisions of a MediaWiki page, from Wikipedia or any compatible wiki, and emits a typed event for each change: sentences first seen, reworded, removed or returned; citations added, removed or replaced; section changes, reverts, edit clusters and talk-page activity. The analysis is deterministic: the same revisions, analyzer versions and configuration produce the same events.
+
+`refract review` keeps a watchlist of pages and reports what changed since your last acknowledged review. The CLI (`@refract-org/cli`) also runs as an MCP server, and the repo includes a Python client and the timeline viewer above. A hash-pinned benchmark corpus of 15,926 events across ten Wikipedia pages ships as a release asset.
+
+[refract-org/refract](https://github.com/refract-org/refract) · [Docs](https://refract-org.github.io/refract/) · AGPL-3.0
 
 ---
 
 ## Whether
 
-**Turns macro and capital conditions into a weekly answer for startup leaders:** how aggressively to hire, spend, raise, and expand — generating meeting-ready operating postures in under 60 seconds with stop and reopen conditions written down before they're needed.
+<a href="https://whether.work">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="docs/assets/whether-dark.png">
+    <img src="docs/assets/whether-light.png" alt="The weekly brief at whether.work for the week of Oct 19, 2026: Cloudy conditions, the week's call, and a chart plotting funding pressure against risk appetite" width="720">
+  </picture>
+</a>
 
-<a href="https://whether.work"><img src="docs/assets/whether.gif" alt="Whether's weekly operating call, with a boldness budget score and explicit guardrails for hiring, investment pace, and fundraising posture" width="720"></a>
+Every Monday, Whether scores two things from public U.S. market data: funding pressure (how hard it is to raise and borrow) and risk appetite (how willing investors and buyers are to back growth). The two scores put the week in one of four conditions, Sunny, Cloudy, Stormy or Freezing, and the brief says what that means for hiring, spending and raising.
 
-Deterministic: the same inputs produce the same call. Every posture carries explicit trip conditions, reopen rules, and boldness budgets. Ships with an MCP and Agent API so autonomous systems can query operating guardrails programmatically.
+Each call comes with the interest-rate and credit lines that would pause or resume it, and subscribers get an email the day one is crossed. It's free, and agents can query it over MCP at `https://whether.work/api/mcp` with no key.
 
-[**Live at whether.work**](https://whether.work)
-
----
-
-## The Crumple Zone
-
-**A publication about how institutions distribute their own failures.** Hospitals, workplaces, platforms and bureaucracies stay calm at the center by pushing the shock outward; the essays follow it to whoever ends up absorbing it.
-
-<a href="https://thecrumple.zone"><img src="docs/assets/crumplezone.png" alt="The Crumple Zone — essays on institutions and the distribution of human burden" width="720"></a>
-
-More than 230 essays so far, on a custom zero-dependency Cloudflare stack (Workers, D1, R2, newsletter delivery orchestration, and concept graph) I built and host myself.
-
-[**Live at thecrumple.zone**](https://thecrumple.zone)
-
----
-
-## Ethotechnics
-
-**A governance commons built around one question most frameworks skip:** can this system be stopped while it's harming someone, by someone other than its owner?
-
-<a href="https://ethotechnics.org"><img src="docs/assets/ethotechnics.png" alt="Ethotechnics Institute — open commons for accountable AI governance" width="720"></a>
-
-Standards, checklists, worked examples, and diagnostics, organized so you enter with a real situation — a live decision, an incident, a policy gap — and leave with named owners, clocks, and evidence rather than a maturity score. Ten proposed standards (including STD-08 Delegation and STD-09 Agent Chains), the Twelve Laws of Delegated Intelligence, operational mechanisms (kill switches, appeal paths, authority registers), and interactive diagnostics (Delegation Audit, Burden Modeler). Crosswalked to NIST AI RMF, ISO/IEC 42001, and the EU AI Act.
-
-To see the operating model applied, the [Reliance Lab](https://kanav.net/lab/) walks one composite deployment — a clinical summary assistant, six months in, with new information on the table — through the decision of whether to keep relying on it.
-
-[**Live at ethotechnics.org**](https://ethotechnics.org) · [zz-plant/ethotechnics.org](https://github.com/zz-plant/ethotechnics.org)
+[**whether.work**](https://whether.work) · [zz-plant/whether](https://github.com/zz-plant/whether) · MIT
 
 ---
 
 ## NextConsensus
 
-**Dated, registered probabilities that the FDA, NICE, or a guideline committee acts by a set date.** Each forecast is built from the body's own review record, hashed and registered before its deadline, and scored in public once the outcome is adjudicated — for market access, HEOR, and regulatory teams working to a date.
+<a href="https://nextconsensus.com"><img src="docs/assets/nextconsensus.png" alt="The nextconsensus.com home page: 'What will FDA, NICE, or a payer do next?' beside a form for asking about a decision by date" width="720"></a>
 
-The goal is not to declare medical truth. It's to put a dated estimate on what an institution will do, under a rule anyone can check afterward. Refract is the open-source observation engine behind part of this workflow.
+NextConsensus registers the probability that the FDA, NICE, a guideline committee or a payer acts by a set date. Each forecast is built from that body's own review record, hashed and registered before its deadline, and scored in public once the outcome is adjudicated. It's for market access, HEOR and regulatory teams working to a date.
 
-[nextconsensus.com](https://nextconsensus.com) · [Registered forecasts](https://nextconsensus.com/verification/) · [github.com/nextconsensus](https://github.com/nextconsensus)
+Refract is the open-source observation engine behind part of this workflow.
+
+[nextconsensus.com](https://nextconsensus.com) · [Registered forecasts](https://nextconsensus.com/forecast/) · [github.com/nextconsensus](https://github.com/nextconsensus)
 
 ---
 
-## Open source
+## Ethotechnics
 
-| Repo | What it is | License |
+<a href="https://ethotechnics.org"><img src="docs/assets/ethotechnics.png" alt="The ethotechnics.org home page: 'When an automated system is wrong, does anyone have to change it?', with the Robodebt case and entry points for builders, auditors, deployers and affected people" width="720"></a>
+
+ethotechnics.org publishes material for keeping automated systems correctable once they're deployed:
+
+- ten draft standards with numbered clauses, including STD-08 Delegation and STD-09 Agent chains
+- blueprints for decision logs, kill switches, appeal paths and authority registers
+- evaluation suites that test whether a deployed system can be corrected
+- self-assessment diagnostics
+
+The standards are crosswalked to NIST AI RMF, ISO/IEC 42001 and the EU AI Act.
+
+[**ethotechnics.org**](https://ethotechnics.org) · [zz-plant/ethotechnics.org](https://github.com/zz-plant/ethotechnics.org) · CC BY-SA 4.0
+
+---
+
+## The Crumple Zone
+
+<a href="https://thecrumple.zone"><img src="docs/assets/crumplezone.png" alt="The Crumple Zone home page: 'Every institution has a crumple zone. Usually it's a person.' with two suggested first essays" width="720"></a>
+
+Essays on what happens when hospitals, employers, platforms and agencies get people wrong: who pays for the mistake, and who can make them fix it. More than 200 so far. The site and its newsletter run on a publishing stack I built on Cloudflare Workers, D1 and Queues.
+
+[**thecrumple.zone**](https://thecrumple.zone)
+
+---
+
+## Smaller tools
+
+| Repo | What it does | License |
 |---|---|---|
-| [refract-org/refract](https://github.com/refract-org/refract) | Observation engine: source histories → replayable semantic change events | AGPL-3.0 |
-| [refract-org/refract-py](https://github.com/refract-org/refract-py) | Python SDK — query and export provenance event streams as DataFrames | AGPL-3.0 |
-| [refract-org/refract-ui](https://github.com/refract-org/refract-ui) | Web explorer for Refract event streams | AGPL-3.0 |
-| [refract-org/refract-docs](https://github.com/refract-org/refract-docs) | Schema reference, architecture, CLI, integration guides | AGPL-3.0 |
-| [zz-plant/stims](https://github.com/zz-plant/stims) | Browser-native MilkDrop visualizer — 1,787 presets, live `.milk` editor | Unlicense |
-| [zz-plant/ambit](https://github.com/zz-plant/ambit) | Capability graph, Homebrew CLI, and meta-MCP server for agent environments | MIT |
-| [zz-plant/ethotechnics.org](https://github.com/zz-plant/ethotechnics.org) | The Ethotechnics open commons site | CC-BY-SA-4.0 |
-| [zz-plant/tenant-tools](https://github.com/zz-plant/tenant-tools) | Building Ledger — privacy-first shared issue tracking for tenant buildings | — |
+| [zz-plant/tenant-tools](https://github.com/zz-plant/tenant-tools) | Tenants in one building log repairs, join an existing issue with "me too", and generate neutral notices. Live at [tenants.kanav.net](https://tenants.kanav.net) | — |
+| [zz-plant/bookkit](https://github.com/zz-plant/bookkit) | Compiles a nonfiction book written in MDX into a searchable site, PDF, EPUB and MCP endpoint, checking each record against its contract before it builds | CC0-1.0 |
+| [zz-plant/ci-guards](https://github.com/zz-plant/ci-guards) | CI gates for TypeScript and Bun: block network access in `bun test`, audit `<main>` landmarks and skip links, fail on new suppressions | — |
+| [zz-plant/cite-checker](https://github.com/zz-plant/cite-checker) | Checks that the sources behind a site's claims still answer, and publishes the result | MIT |
+| [zz-plant/rendered-prose-lint](https://github.com/zz-plant/rendered-prose-lint) | Prose checks that run on a static site's built HTML | MIT |
+| [zz-plant/astro-git-revisions](https://github.com/zz-plant/astro-git-revisions) | Per-page revision dates from the git log for Astro sites | MIT |
+| [zz-plant/fast-harm-slow-repair](https://github.com/zz-plant/fast-harm-slow-repair) | Draft evaluation protocol: does a healthcare AI workflow stay correctable after its record becomes wrong? | MIT |
 
 ---
 
-## Healthcare background
+## Background
 
-U.S. healthcare has spent 15 years moving decisions into software. My work is about making sure responsibility moves with them. I spent 14 years as a product lead across Epic, Doximity, CancerCompass, Transcarent, and Andwise — building products where decisions have to be traceable, challengeable, and reversible.
-
-- **Doximity Dialer** — founding product lead. Built the identity layer that let a physician call a patient from their own phone while the patient saw the office number — so the call got answered and the physician's cell number stayed private. Nine years after I left, Dialer carries 300,000+ calls on an average workday across 250+ hospitals and health systems — #1 Best in KLAS Telehealth Video for five consecutive years.
-- **CancerCompass / CTCA Marketplace** — led digital products for an oncology navigation platform serving 30MM annual visitors. Cut bounce rate 25%, lifted chat conversions 267%.
-- **Transcarent** — directed care-navigation product across Surgery, Urgent Care, Behavioral Health, and Oncology Care.
-- **Epic** — owned what happened to eight client organizations after installation: a 477-bed cancellation risk worked back to a reference account, a 134-year-old health system taken online, and the federal quality-reporting escalation path. The workflow around the clinician was usually the constraint, not the clinician.
-- **Andwise** — co-founded a physician financial-wellness company: software that read a physician's employment contract and flagged the clauses worth arguing about, with a named reviewer behind every analysis. Raised $240K, grew to 1,200+ physician users and a 700-member community; wound down in 2024.
-- **Georgia Tech** — studied RNA folding dynamics; first author on a chapter in the ACS Symposium Series (Vol. 1082, 2011) on the thermodynamics of sRNA–mRNA interactions.
+- **Andwise** (2022–24) — co-founder and CEO. Software that read a physician's employment contract and flagged the clauses worth negotiating, with a named reviewer behind every analysis. Raised $240K and reached 1,200+ physician users and a 700-member community; wound down in 2024.
+- **Transcarent** (2021–22) — Director of Product, Care Experiences. Directed four specialty-care programs: Surgery, Everyday Urgent Care, Behavioral Health and Oncology Care.
+- **CancerCompass** (2019–21) — first product and technical hire at a Cancer Treatment Centers of America venture; led a 14-person R&D team. The platform served 30MM annual visitors; cut bounce rate 25% and lifted chat conversions 267%.
+- **NYU Stern** (2019) — MBA.
+- **Doximity** (2013–17) — originated Doximity Dialer as founding product lead. Dialer lets a physician call a patient from their own phone while the patient sees the office number, so the call is more likely to be answered and the physician's cell stays private. Nine years after I left, Dialer carries 300,000+ calls on an average workday across 250+ hospitals and health systems, and has ranked first in Best in KLAS for Telehealth Video five years running. I left as Head of Mobile Products & Growth.
+- **Epic** (2012–13) — technical services engineer for eight client organizations after installation: worked a 477-bed cancellation risk back to a reference account, brought a 134-year-old health system online, and co-led the PQRS federal quality-reporting group.
+- **Georgia Tech** (2009–12) — RNA research; first author on an ACS Symposium Series chapter (Vol. 1082, 2011) on the thermodynamics of sRNA–mRNA interactions.
 
 ## Contact
 
-If you're working on a healthcare AI product that needs to survive real workflow, review, audit, override, and mistakes, I'd like to hear about it.
-
-- [kanav@kanav.net](mailto:kanav@kanav.net)
-- [kanav.net](https://kanav.net)
+[kanav@kanav.net](mailto:kanav@kanav.net). I especially want to hear from teams putting AI into healthcare workflows.

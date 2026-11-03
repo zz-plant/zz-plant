@@ -9,7 +9,7 @@ This repository renders the GitHub profile README for the user **zz-plant** (Kan
 
 ## Rules
 
-1. **Assets must live in this repo.** Several of the projects the profile describes (`whether`, `blog`, `bread`, the `nextconsensus-*` repos) are private. Referencing an image from a private repo's raw URL renders a broken image for every visitor. Copy the asset into `docs/assets/` instead.
+1. **Assets must live in this repo.** Several of the projects the profile describes (`blog`, `kanav-net`, the `nextconsensus-*` repos) are private. Referencing an image from a private repo's raw URL renders a broken image for every visitor. Copy the asset into `docs/assets/` instead.
 
 2. **Only link repos that are public.** Before adding a repo link, confirm visibility:
    ```
@@ -27,7 +27,16 @@ This repository renders the GitHub profile README for the user **zz-plant** (Kan
 
 ## Regenerating captures
 
-Clips are recorded with Playwright against the live sites, then encoded with a two-pass ffmpeg palette:
+Where a project's own repo publishes a current capture, copy it rather than re-recording: `ambit.gif` is ambit's `docs/assets/capability-graph-demo.gif`, `whether-light.png`/`whether-dark.png` are whether's `docs/assets/screens/weekly-brief-*.png`, `refract.png` is refract's `apps/docs/docs/assets/refract-ui-diff.png`, and `stims.webp` is stims' `docs/assets/clips/stims-workflow.mp4` at 2× speed. The Crumple Zone, Ethotechnics and NextConsensus images are Playwright screenshots of each home page (1200×750 viewport, device scale 1.2, light scheme, cropped to the hero).
+
+Homebrew's ffmpeg has no WebP encoder, so animated WebP goes through frames and `img2webp`:
+
+```
+ffmpeg -i stims-workflow.mp4 -vf "setpts=0.5*PTS,fps=12,scale=720:-2:flags=lanczos" f%03d.png
+img2webp -loop 0 -lossy -q 65 -m 6 -d 83 f*.png -o stims.webp
+```
+
+New clips are recorded with Playwright against the live sites, then encoded with a two-pass ffmpeg palette:
 
 ```
 ffmpeg -framerate 9 -i f%03d.png -vf "scale=720:-2:flags=lanczos,palettegen=max_colors=128:stats_mode=diff" pal.png
