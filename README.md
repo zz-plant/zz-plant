@@ -57,7 +57,7 @@ Ambit is also an MCP server. An agent can ask what it can do before it tries, an
 
 ## Refract
 
-<a href="https://github.com/refract-org/refract"><img src="docs/assets/refract.png" alt="Refract's timeline viewer: revision events on the left (claim first seen, citation added, revert detected, claim reworded) and the word-level diff for the selected rewording on the right" width="720"></a>
+<a href="https://github.com/zz-plant/refract"><img src="docs/assets/refract.png" alt="Refract's timeline viewer: revision events on the left (claim first seen, citation added, revert detected, claim reworded) and the word-level diff for the selected rewording on the right" width="720"></a>
 
 <sub>The timeline viewer, loaded with sample events.</sub>
 
@@ -65,7 +65,7 @@ Compares revisions of a MediaWiki page, from Wikipedia or any compatible wiki, a
 
 `refract review` keeps a watchlist of pages and reports what changed since your last acknowledged review. The CLI (`@refract-org/cli`) also runs as an MCP server, and the repo includes a Python client and the timeline viewer above. A hash-pinned benchmark corpus of 15,926 events across ten Wikipedia pages ships as a release asset.
 
-[refract-org/refract](https://github.com/refract-org/refract) · [Docs](https://refract-org.github.io/refract/) · AGPL-3.0
+[zz-plant/refract](https://github.com/zz-plant/refract) · [Docs](https://zz-plant.github.io/refract/) · AGPL-3.0
 
 ---
 
@@ -119,7 +119,7 @@ The standards are crosswalked to NIST AI RMF, ISO/IEC 42001 and the EU AI Act.
 
 <a href="https://thecrumple.zone"><img src="docs/assets/crumplezone.png" alt="The Crumple Zone home page: 'Every institution has a crumple zone. Usually it's a person.' with two suggested first essays" width="720"></a>
 
-Essays on what happens when hospitals, employers, platforms and agencies get people wrong: who pays for the mistake, and who can make them fix it. More than 200 so far. The site and its newsletter run on a publishing stack I built on Cloudflare Workers, D1 and Queues.
+Essays on what happens when hospitals, employers, platforms and agencies get people wrong: who pays for the mistake, and who can make them fix it. More than 180 so far. The site and its newsletter run on a publishing stack I built on Cloudflare Workers, D1 and Queues.
 
 [**thecrumple.zone**](https://thecrumple.zone)
 
