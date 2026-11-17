@@ -25,9 +25,13 @@ This repository renders the GitHub profile README for the user **zz-plant** (Kan
 
 6. **No application source code.** This stays a profile and asset repo.
 
+7. **Three projects get a section; the rest get a line.** The profile leads with Stims, Ambit and NextConsensus, each with a capture. Everything else sits under "Other projects" as one line, and the smaller tools as linked names. Fourteen sections of equal weight read as volume. To feature a different project, swap it with one of the three; do not add a fourth section.
+
 ## Regenerating captures
 
-Where a project's own repo publishes a current capture, copy it rather than re-recording: `ambit.gif` is ambit's `docs/assets/capability-graph-demo.gif`, `whether-light.png`/`whether-dark.png` are whether's `docs/assets/screens/weekly-brief-*.png`, `refract.png` is refract's `apps/docs/docs/assets/refract-ui-diff.png`, and `stims.webp` is stims' `docs/assets/clips/stims-workflow.mp4` at 2× speed. The Crumple Zone, Ethotechnics and NextConsensus images are Playwright screenshots of each home page (1200×750 viewport, device scale 1.2, light scheme, cropped to the hero).
+Where a project's own repo publishes a current capture, copy it rather than re-recording: `ambit.gif` is ambit's `docs/assets/capability-graph-demo.gif` and `stims.webp` is stims' `docs/assets/clips/stims-workflow.mp4` at 2× speed. The NextConsensus image is a Playwright screenshot of its home page (1200×750 viewport, device scale 1.2, light scheme, cropped to the hero).
+
+If a listed project is promoted to a section, its capture comes from the same kind of source: whether's `docs/assets/screens/weekly-brief-*.png`, refract's `apps/docs/docs/assets/refract-ui-diff.png`, and a home-page screenshot as above for The Crumple Zone and Ethotechnics.
 
 Homebrew's ffmpeg has no WebP encoder, so animated WebP goes through frames and `img2webp`:
 
