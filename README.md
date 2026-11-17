@@ -119,7 +119,7 @@ The standards are crosswalked to NIST AI RMF, ISO/IEC 42001 and the EU AI Act.
 
 <a href="https://thecrumple.zone"><img src="docs/assets/crumplezone.png" alt="The Crumple Zone home page: 'Every institution has a crumple zone. Usually it's a person.' with two suggested first essays" width="720"></a>
 
-Essays on what happens when hospitals, employers, platforms and agencies get people wrong: who pays for the mistake, and who can make them fix it. More than 180 so far. The site and its newsletter run on a publishing stack I built on Cloudflare Workers, D1 and Queues.
+Essays on what happens when hospitals, employers, platforms and agencies get people wrong: who pays for the mistake, and who can make them fix it. The site and its newsletter run on a publishing stack I built on Cloudflare Workers, D1 and Queues.
 
 [**thecrumple.zone**](https://thecrumple.zone)
 
