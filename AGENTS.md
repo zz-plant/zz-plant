@@ -17,7 +17,9 @@ This repository renders the GitHub profile README for the user **zz-plant** (Kan
    ```
    Private work belongs in the profile as a described project with a link to its live site, not as a repo link that 404s.
 
-3. **Numbers in the profile must be re-checked, not carried forward.** Preset counts, essay counts, and tool counts drift as the projects ship. Verify against the live surface or the source repo before editing a line that contains one.
+3. **Numbers in the profile must be re-checked, not carried forward.** Preset counts and tool counts drift as the projects ship. Verify against the live surface or the source repo before editing a line that contains one.
+
+   A count of output is not a description. "More than 180 essays" said how much was written, not what the essays are, and it left on 2026-11-17. Keep a number when another party recorded it (calls carried, hospitals served) or when it sizes something a visitor would use (a preset catalog, a conformance suite). Do not count essays, standards, tools, repos or commits as a reason to look.
 
 4. **Captures show real software.** Screenshots and clips are recorded from the running app or the live site. Do not substitute abstract title-card animations — they demonstrate nothing.
 
